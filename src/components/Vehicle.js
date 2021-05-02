@@ -6,7 +6,11 @@ function Vehicle({ link }) {
     loadvehicle(link);
   }, [link]);
   const loadvehicle = (link) => {
-    fetch(`${link}`)
+    fetch(`${link}`, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
       .then((resp) => resp.json())
       .then((resp) => {
         setvehicle(resp.name);
