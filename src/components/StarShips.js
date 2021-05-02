@@ -9,11 +9,10 @@ function StarShips({ link }) {
     fetch(`${link}`)
       .then((resp) => resp.json())
       .then((resp) => {
-        //console.log(resp.title);
         setstarShip(resp.name);
       });
   };
-  //   console.log(film);
+
   return <li>{starShip}</li>;
 }
 

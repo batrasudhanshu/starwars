@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ColorBoxWrapper from "../styles/style.colorbox";
 function ColorBox({ color }) {
   //   console.log(film);

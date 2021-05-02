@@ -9,11 +9,10 @@ function Vehicle({ link }) {
     fetch(`${link}`)
       .then((resp) => resp.json())
       .then((resp) => {
-        //console.log(resp.title);
         setvehicle(resp.name);
       });
   };
-  //   console.log(film);
+
   return <li>{vehicle}</li>;
 }
 
